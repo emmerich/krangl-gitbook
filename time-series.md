@@ -1,3 +1,9 @@
+---
+description: >-
+  Those who have knowledge, don't predict. Those who predict, don't have
+  knowledge. - Lao Tzu
+---
+
 # Time Series
 
 ### Basics
