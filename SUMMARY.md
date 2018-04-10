@@ -3,6 +3,7 @@
 * [krangl-gitbook](README.md)
 * [krangl in 10 Minutes](10_minutes.md)
 * [Time Series](time-series.md)
+* [Data Manipulan](data_manip.md)
 
 Developer Docs
 * [Performance Optimization](Performance.md)
