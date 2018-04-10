@@ -4,8 +4,9 @@
 
 * [`krangl` in 10 Minutes](10_minutes.md)
 
-### How To
+### Core Concepts
 
+* [Data Model](data_model.md)
 * [Data Manipulation](data_manip.md)
   * [Create new columns with `addColumns`](data_manip.md#create-new-columns)
 * [Reshape Tablular Data](reshape.md)
