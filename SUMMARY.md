@@ -14,9 +14,16 @@
 
 ### Advanced
 
-<!-- * [Report Rendering](report_rendering.md) -->
-* [Performance Optimization](Performance.md)
+* [Nested Data](nested_data.md)
+* [Frequently Asked Questions](faq.md)
 
+
+### Tutorials
+
+* [Regression Analysis](tutorials/statistics.md#regression-analysis)
+* [Machine Learning](tutorials/statistics.md#classical-machine-learning-with-smile)
+* [Report Rendering](tutorials/report_rendering.md)
+* [Data Visualization](tutorials/data_vis.md)
 
 ### External
 
