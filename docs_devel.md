@@ -14,8 +14,9 @@ for gitbook page layout see https://toolchain.gitbook.com/pages.html
 https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md
 
 ```bash
-npm install gitbook-cli -g
+#npm install gitbook-cli -g
 
+#cd /Users/brandl/projects/kotlin/krangl/docs/manual
 gitbook serve
 gitbook build
 

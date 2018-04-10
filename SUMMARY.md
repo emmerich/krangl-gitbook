@@ -8,7 +8,7 @@
 
 * [Data Model](data_model.md)
 * [Data Manipulation](data_manip.md)
-  * [Create new columns with `addColumns`](data_manip.md#create-new-columns)
+  * [Create new columns with `addColumns`](data_manip.md#add-columns-with-addcolumn)
 * [Reshape Tablular Data](reshape.md)
 * [Analyze Time Series](time-series.md)
 
