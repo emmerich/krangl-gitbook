@@ -2,8 +2,7 @@
 
 ### Getting Started
 
-* [krangl-gitbook](README.md)
-* [krangl in 10 Minutes](10_minutes.md)
+* [`krangl` in 10 Minutes](10_minutes.md)
 
 ### How To
 
