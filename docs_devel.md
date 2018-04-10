@@ -3,6 +3,7 @@
 How to improve docs?
 
 * learn from https://jtablesaw.wordpress.com/an-introduction/
+* how to illustrate joins https://blog.jooq.org/2016/07/05/say-no-to-venn-diagrams-when-explaining-joins/
 
 
 
