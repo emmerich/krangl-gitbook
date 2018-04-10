@@ -1,4 +1,4 @@
-This is the [manual](https://krangl.gitbook.io/docs/) for krangl.
+This is the [manual](https://krangl.gitbook.io/docs/) for [krangl](https://github.com/holgerbrandl/krangl).
 
 `krangl` is a {K}otlin library for data w{rangl}ing. By implementing a grammar of data manipulation using a modern functional-style API, it allows to filter, transform, aggregate and reshape tabular data.
 
