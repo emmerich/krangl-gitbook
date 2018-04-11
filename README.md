@@ -22,11 +22,20 @@ Features
 * Descriptive statistics (mean, min, max, median, ...)
 * Functional API inspired by [dplyr](http://dplyr.tidyverse.org/), [pandas](http://pandas.pydata.org/), and Kotlin [stdlib](https://kotlinlang.org/api/latest/jvm/stdlib/index.html)
 
+Furthermore it provides methods to go back and forth between untyped and typed data.
 
 
-Further more it provides methods to go back and forth between untyped and typed data.
+Installation
+------------
 
-# Example
+To get started simply add it as a dependency via Jcenter:
+```
+compile "de.mpicbg.scicomp:krangl:0.9"
+```
+
+
+Example
+-------
 
 Flights that departed NYC, are grouped by date, some columns of interest are selected, dasummarized to reveal mean departure and arrival delays, and finally just those dates are kept that show extreme delays.
 

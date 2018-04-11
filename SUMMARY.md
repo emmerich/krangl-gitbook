@@ -3,18 +3,11 @@
 ### Getting Started
 
 * [`krangl` in 10 Minutes](10_minutes.md)
-
-### Core Concepts
-
 * [Data Model](data_model.md)
 * [Data Manipulation](data_manip.md)
   * [Create new columns with `addColumns`](data_manip.md#add-columns-with-addcolumn)
 * [Reshape Tablular Data](reshape.md)
 * [Analyze Time Series](time-series.md)
-
-### Advanced
-
-* [Nested Data](nested_data.md)
 * [Frequently Asked Questions](faq.md)
 
 
