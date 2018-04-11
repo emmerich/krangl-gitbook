@@ -25,6 +25,38 @@ First, should we? Yes, because
 In Febuary 2018 Kotlin v1.0 was released. Designed with DSLs in mind it comes alongs With great features language such Type Inference, Extension Functions, Data Classes, or Default Parameters, making it a perfect choice to do *data science on the JVM*.
 
 
+## How does `krangl` compare to what R/dplyr or python/pandas?
+
+
+
+```kotlin
+flights
+    .groupBy("year", "month", "day")
+    .select({ range("year", "day") }, { listOf("arr_delay", "dep_delay") })
+    .summarize(
+            "mean_arr_delay" to { it["arr_delay"].mean(removeNA = true) },
+            "mean_dep_delay" to { it["dep_delay"].mean(removeNA = true) }
+    )
+    .filter { (it["mean_arr_delay"] gt  30)  OR  (it["mean_dep_delay"] gt  30) }
+```
+
+And the same snippet written in `dplyr`:
+
+```r
+flights %>%
+    group_by(year, month, day) %>%
+    select(year:day, arr_delay, dep_delay) %>%
+    summarise(
+        mean_arr_delay = mean(arr_delay, na.rm = TRUE),
+        mean_dep_delay = mean(dep_delay, na.rm = TRUE)
+    ) %>%
+    filter(mean_arr_delay > 30 | mean_dep_delay > 30)
+```
+
+The biggest different are the comparison operators, which Kotlin does not allow to [be overridden](https://kotlinlang.org/docs/reference/operator-overloading.html) in a vectorized way.
+
+And the same in `pandas`. **{no clue, PR needed here!}**
+
 
 ## Further Reading?
 

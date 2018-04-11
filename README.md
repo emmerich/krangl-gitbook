@@ -28,6 +28,8 @@ Further more it provides methods to go back and forth between untyped and typed 
 
 # Example
 
+Flights that departed NYC, are grouped by date, some columns of interest are selected, dasummarized to reveal mean departure and arrival delays, and finally just those dates are kept that show extreme delays.
+
 ```kotlin
 flights
     .groupBy("year", "month", "day")
@@ -39,22 +41,4 @@ flights
     .filter { (it["mean_arr_delay"] gt  30)  OR  (it["mean_dep_delay"] gt  30) }
 ```
 
-And the same snippet written in `dplyr`:
-
-```r
-flights %>%
-    group_by(year, month, day) %>%
-    select(year:day, arr_delay, dep_delay) %>%
-    summarise(
-        mean_arr_delay = mean(arr_delay, na.rm = TRUE),
-        mean_dep_delay = mean(dep_delay, na.rm = TRUE)
-    ) %>%
-    filter(mean_arr_delay > 30 | mean_dep_delay > 30)
-```
-
-The biggest different are the comparison operators, which Kotlin does not allow to [be overridden](https://kotlinlang.org/docs/reference/operator-overloading.html) in a vectorized way.
-
-
-
-And the same in `pandas`. **{PR needed here}**
 
