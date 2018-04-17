@@ -5,6 +5,10 @@
 * learn from https://jtablesaw.wordpress.com/an-introduction/
 * how to illustrate joins https://blog.jooq.org/2016/07/05/say-no-to-venn-diagrams-when-explaining-joins/
 
+* for 10 min overview see http://nbviewer.jupyter.org/urls/gist.github.com/wesm/4757075/raw/a72d3450ad4924d0e74fb57c9f62d1d895ea4574/PandasTour.ipynb
+* see https://jtablesaw.github.io/tablesaw/userguide/toc
+
+* add star button directly to docs as in https://deeplearning4j.org/index.html
 
 
 ## gitbook documentation

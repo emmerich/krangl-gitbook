@@ -58,6 +58,30 @@ The biggest different are the comparison operators, which Kotlin does not allow 
 And the same in `pandas`. **{no clue, PR needed here!}**
 
 
+## How to add columns totals to data-frame?
+
+```kotlin
+val foo = dataFrameOf(
+    "Name", "Duration", "Color")(
+    "Foo", 100, "Blue",
+    "Goo", 200, "Red",
+    "Bar", 300, "Yellow")
+
+val columnTotals = foo.cols.map {
+    it.name to when (it) {
+        is IntCol -> it.sum()
+        else -> null // ignored column types
+    }
+}.toMap().run {
+    dataFrameOf(keys)(values)
+}
+
+
+bindRows(foo, columnTotals).print()
+```
+
+
+
 ## Further Reading?
 
 [`krangl` presentation at Kotlin-Night in Frankfurt (March 2018)](https://holgerbrandl.github.io/kotlin4ds_kotlin_night_frankfurt//emerging_kotlin_ds_ecosystem.html)
