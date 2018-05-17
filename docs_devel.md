@@ -10,6 +10,9 @@
 
 * add star button directly to docs as in https://deeplearning4j.org/index.html
 
+* Add chapter about integration with https://github.com/bedatadriven/renjin
+
+ * https://blog.jetbrains.com/kotlin/2018/04/embedding-kotlin-playground/
 
 ## gitbook documentation
 
