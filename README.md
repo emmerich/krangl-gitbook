@@ -33,6 +33,7 @@ To get started simply add it as a dependency via Jcenter:
 compile "de.mpicbg.scicomp:krangl:0.9.1"
 ```
 
+If you're very new to Kotlin and Gradle you may want to read first about its [basic syntax](https://kotlinlang.org/docs/reference/basic-syntax.html), some basic [IDE features](https://kotlinlang.org/docs/tutorials/getting-started.html) and about [how to use gradle](https://kotlinlang.org/docs/reference/using-gradle.html) to configure dependencies in Kotlin projects.
 
 Example
 -------
