@@ -27,6 +27,15 @@ plotOf(movies) {  mark = Mark(circle)
 
 ![](.data_vis_images/kravis_plot.png)
 
+
+### Plot Immutablity.
+
+Plots are -- similar to krangl data-frames -- immutable.
+
+```
+
+```
+
 # Other options
 
 There are great other libaries available, which typically don't work with `krangl` yet, but provide awesome ways to visualize data.

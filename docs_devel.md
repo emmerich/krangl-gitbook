@@ -28,7 +28,6 @@ gitbook serve
 gitbook build
 
 gitbook build ./ --log=debug --debug
-
 ```
 
 don't miss the local editor
