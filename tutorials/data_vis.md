@@ -27,6 +27,31 @@ plotOf(movies) {  mark = Mark(circle)
 
 ![](.data_vis_images/kravis_plot.png)
 
+### Rendering Devices
+
+`kravis` can render using the following
+
+
+
+### Iterator API
+
+Instead of using `krangl` data-frames, it is also possible to use any `Iterable<T>` to create plots. Here's an example:
+
+```kotlin
+val basePlot = sleepPatterns.ggplot(
+    x to { brainwt },
+    y to { bodywt },
+    alpha to { sleep_total }
+)
+
+// add layers
+basePlot.geomPoint()
+    .scaleXLog10()
+    .scaleYLog10("labels" to "comma")
+    .show()
+```
+
+
 
 ### Plot Immutablity.
 
