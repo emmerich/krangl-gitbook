@@ -53,22 +53,21 @@ It's easy to use `krangl` and `smile` to build data science workflows. Here is a
 ```kotlin
 val irisArray = irisData.remove("Species").toArray()
 
-val pca = smile.projection.PCA(irisArray)
-
 //barchart
-plotOf(pca.varianceProportion.toList()) {
-    encoding(x) { this }
-}.render()
-
+pca.varianceProportion.withIndex().plot({ it.index }, { it.value }).geomCol().show()
 
 val projection = pca.setProjection(2).projection
 
-// PC1 vs PC2 scatter
-plotOf(projection.transpose().array().withIndex()) {
-    mark(MarkType.point)
-    encoding(x) { value[0] }
-    encoding(y) { value[1] }
-    encoding(text){ "PC"+index}
-}.render()
+// merge back in the group labels to color scatter
+var pc12 = projection.transpose().array().withIndex().deparseRecords {
+    mapOf(
+        "index" to it.index + 1,
+        "x" to it.value[0],
+        "y" to it.value[1])
+}
+
+pc12 = pc12.leftJoin(irisData.addColumn("index") { rowNumber })
+
+pc12.plot(x="x", y = "y", color = "Species").geomPoint().show()
 ```
 
